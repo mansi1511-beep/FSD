@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS 
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: beige; 
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-header {
+            background-color:white;
+            border-bottom: 2px solid #ccc;
+            padding: 10px;
+        }
+        .profile-pic {
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%;
+            border: 2px solid #007bff;
+            margin: 20px auto; 
+            display: block;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input, .form-container textarea, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color:white;
+        }
+    </style>
+    */
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>My Profile</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="port.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="test.html">Testimonials</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.linkedin.com/in/myprofile" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <!-- Profile Picture -->
+        <img src="girl.jfif" alt="Profile Picture" class="profile-pic">
+
+        <div class="content">
+            <section id="about">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <p>Hello! I'm [Mansi], a [system analyst] with a passion for [working]. I have experience in [data science] and enjoy working on projects related to validation.</p>
+            </section>
+
+            <section id="education">
+                <div class="section-header">
+                    <h2>Education</h2>
+                </div>
+                <table class="table table-bordered">
+                    <caption>Education History</caption>
+                    <thead>
+                        <tr>
+                            <th>Institution</th>
+                            <th>Degree</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MIT WPU</td>
+                            <td>Bachelor's in [computer science]</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>NYU</td>
+                            <td>Master's in [engineering management]</td>
+                            <td>2028</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="skills">
+                <div class="section-header">
+                    <h2>Skills</h2>
+                </div>
+                <ul>
+                    <li>Programming Languages: HTML, CSS, JavaScript</li>
+                    <li>Web Development: React, Node.js</li>
+                    <li>Graphic Design: Photoshop, Illustrator</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <div class="section-header">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="form-container">
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Select a topic:</label>
+                            <select id="topic" name="topic" class="form-control">
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="collaboration">Collaboration</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 [MANSI SALUNKE]. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
